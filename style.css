@@ -28,8 +28,7 @@ body {
     border-radius: 20px;
     padding: 1.5em;
     color: white;
-    width: 100%;
-    max-width: 600px;
+    width: min(500px, 60vw);
 }
 
 .card .info {
@@ -39,6 +38,10 @@ body {
     justify-content: space-between;
 
     margin-left: 2em;
+}
+
+.card .info p {
+    font-size: min(1em, 3vw);
 }
 
 .info > h2 {
@@ -51,6 +54,26 @@ body {
     justify-content: space-between;
     width: 100%;
     margin-top: 1em;
+}
+.links li {
+    font-size: min(1em , 3vw);
+}
+
+#repos a {
+    font-size: min(.7em, 1.7vw);
+}
+
+@media screen and (max-width: 830px) {
+    .card {
+        flex-direction: column;
+    }
+    .card .info {
+        margin-left: 0;
+        align-items: center;
+    }
+    .card .info p {
+        text-align: center;
+    }
 }
 
 
