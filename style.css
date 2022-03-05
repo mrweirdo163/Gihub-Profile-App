@@ -62,21 +62,6 @@ body {
 #repos a {
     font-size: min(.7em, 1.7vw);
 }
-
-@media screen and (max-width: 830px) {
-    .card {
-        flex-direction: column;
-    }
-    .card .info {
-        margin-left: 0;
-        align-items: center;
-    }
-    .card .info p {
-        text-align: center;
-    }
-}
-
-
 .card .avt {
     width: 150px;
     border-radius: 50%;
@@ -134,4 +119,17 @@ body {
 
 .repo:first-child {
     margin-top: 1.5em;
+}
+
+@media screen and (max-width: 830px) {
+    .card {
+        flex-direction: column;
+    }
+    .card .info {
+        margin-left: 0;
+        align-items: center;
+    }
+    .card .info p {
+        text-align: center;
+    }
 }
