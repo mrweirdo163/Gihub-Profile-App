@@ -63,7 +63,7 @@ body {
     font-size: min(.7em, 1.7vw);
 }
 .card .avt {
-    width: 150px;
+    width: min(150px, 20vw);
     border-radius: 50%;
     border: 10px solid #2a2a72;
 }
